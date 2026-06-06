@@ -3,53 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hana Khadar | Portfolio</title>
+<title>Hana Beauty Studio</title>
 
 <style>
 body{
     margin:0;
     font-family:Arial, sans-serif;
-    background:#0f172a;
-    color:white;
+    background:#fff0f5;
+    color:#333;
 }
 
 /* HERO */
 .hero{
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
     background-size:cover;
     background-position:center;
     text-align:center;
-    padding:80px 20px;
+    padding:90px 20px;
+    color:white;
 }
 
 .hero img{
-    width:150px;
-    height:150px;
+    width:140px;
+    height:140px;
     border-radius:50%;
     border:4px solid white;
 }
 
 .hero h1{
-    margin:10px 0 5px;
+    margin:10px 0;
 }
 
 .hero p{
-    color:#cbd5e1;
+    color:#fce7f3;
 }
 
 /* NAV */
 nav{
+    background:#b91c1c;
     display:flex;
     justify-content:center;
     gap:20px;
-    background:#111827;
     padding:10px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
+    font-weight:bold;
 }
 
 /* SECTION */
@@ -61,41 +63,42 @@ section{
 
 /* CARD */
 .card{
-    background:#1e293b;
+    background:white;
     padding:20px;
     border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
     margin-bottom:20px;
 }
 
-/* PROJECT GRID */
+/* SERVICES */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
-.project{
-    background:#1e293b;
+.service{
+    background:white;
     border-radius:12px;
     overflow:hidden;
-    transition:0.3s;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.project:hover{
-    transform:scale(1.05);
-}
-
-.project img{
+.service img{
     width:100%;
-    height:170px;
+    height:180px;
     object-fit:cover;
+}
+
+.service div{
+    padding:10px;
 }
 
 /* BUTTON */
 .btn{
     display:inline-block;
     padding:10px 20px;
-    background:#4d0f00;
+    background:#b91c1c;
     color:white;
     text-decoration:none;
     border-radius:8px;
@@ -104,9 +107,9 @@ section{
 /* FOOTER */
 footer{
     text-align:center;
+    background:#111;
+    color:white;
     padding:20px;
-    background:#111827;
-    color:#94a3b8;
 }
 </style>
 </head>
@@ -115,57 +118,56 @@ footer{
 
 <!-- HERO -->
 <div class="hero">
-    <img src="https://via.placeholder.com/150" alt="Profile">
-    <h1>Hana Khadar</h1>
-    <p>Web Developer | Designer | Freelancer</p>
-    <a class="btn" href="#contact">Contact Me</a>
+    <img src="https://via.placeholder.com/140" alt="Profile">
+    <h1>Hana Beauty Studio 💄</h1>
+    <p>Makeup Artist | Beauty Services | Bridal Makeup</p>
 </div>
 
 <!-- NAV -->
 <nav>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <!-- ABOUT -->
 <section id="about">
 <div class="card">
-    <h2>About Me</h2>
-    <p>
-        Waxaan ahay web developer jecel design casri ah iyo frontend development.
-        Waxaan dhisaa websites professional ah oo responsive ah.
-    </p>
+<h2>About Us</h2>
+<p>
+Welcome to Hana Beauty Studio 💖  
+Waxaan bixinaa adeegyo makeup casri ah, bridal makeup, photoshoot makeup iyo beauty care.
+</p>
 </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-<h2>My Projects</h2>
+<!-- SERVICES -->
+<section id="services">
+<h2>Our Services</h2>
 
 <div class="grid">
 
-<div class="project">
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-<div style="padding:10px;">
-<h3>Business Website</h3>
-<p>Modern landing page design.</p>
+<div class="service">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+<div>
+<h3>Bridal Makeup</h3>
+<p>Makeup aroos qurux badan oo professional ah.</p>
 </div>
 </div>
 
-<div class="project">
-<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d">
-<div style="padding:10px;">
-<h3>Portfolio Design</h3>
-<p>Creative personal portfolio UI.</p>
+<div class="service">
+<img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
+<div>
+<h3>Party Makeup</h3>
+<p>Makeup xafladaha iyo events-ka.</p>
 </div>
 </div>
 
-<div class="project">
-<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
-<div style="padding:10px;">
-<h3>Dashboard UI</h3>
-<p>Admin dashboard modern design.</p>
+<div class="service">
+<img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
+<div>
+<h3>Photoshoot Makeup</h3>
+<p>Makeup camera-ready ah oo studio ah.</p>
 </div>
 </div>
 
@@ -175,18 +177,19 @@ footer{
 <!-- CONTACT -->
 <section id="contact">
 <div class="card">
-<h2>Contact Me</h2>
+<h2>Contact Us</h2>
 <p>📞 +252 634849872</p>
-<p>📧 your@email.com</p>
+<p>📧 hanabeauty@gmail.com</p>
 <a class="btn" href="tel:+252634849872">Call Now</a>
 </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>© 2026 Hana Khadar | All Rights Reserved</p>
+<p>© 2026 Hana Beauty Studio | All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
-           
+   
+
