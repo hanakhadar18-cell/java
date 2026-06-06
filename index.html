@@ -1,128 +1,192 @@
 <!DOCTYPE html>
-<html lang="so">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dukaanka Casriga Ah</title>
-    <style>
-        /* Isbaddalka Guud ee Bogga */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hana Khadar | Portfolio</title>
 
-        /* Qaybta Sare (Header) */
-        header {
-            background-color: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:80px 20px;
+}
 
-        /* Weelka Alaabta Guri u ah */
-        .shop-container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
+.hero img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid white;
+}
 
-        /* Kaararka Alaabta (Product Cards) */
-        .product-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.3s;
-        }
+.hero h1{
+    margin:10px 0 5px;
+}
 
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
+.hero p{
+    color:#cbd5e1;
+}
 
-        /* Meesha Sawirka Alaabta (Hadda waa calaamad astaan ah) */
-        .product-image {
-            background-color: #eaeaea;
-            height: 180px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
+/* NAV */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background:#111827;
+    padding:10px;
+}
 
-        .product-title {
-            font-size: 20px;
-            margin: 10px 0;
-            font-weight: 600;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+}
 
-        .product-price {
-            color: #e44d26;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
+/* SECTION */
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
 
-        /* Badanka WhatsApp-ka */
-        .order-btn {
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            display: inline-block;
-            transition: background 0.3s;
-        }
+/* CARD */
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
 
-        .order-btn:hover {
-            background-color: #1ebd58;
-        }
-    </style>
+/* PROJECT GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#1e293b;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:scale(1.05);
+}
+
+.project img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#4d0f00;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:#94a3b8;
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Qaybta Sare -->
-    <header>
-        <h1>🛍️ DUKAANKAYGA ONLINE-KA AH</h1>
-        <p>Halkan ka hel alaabooyinka ugu jaban uguna tayada sarreeya</p>
-    </header>
+<!-- HERO -->
+<div class="hero">
+    <img src="https://via.placeholder.com/150" alt="Profile">
+    <h1>Hana Khadar</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+    <a class="btn" href="#contact">Contact Me</a>
+</div>
 
-    <!-- Qaybta Alaabta -->
-    <main class="shop-container">
-        
-        <!-- Alaabta 1-aad -->
-        <div class="product-card">
-            <div class="product-image">📱</div>
-            <div class="product-title">Iphone 15 Pro</div>
-            <div class="product-price">$999</div>
-            <a href="https://wa.me" target="_blank" class="order-btn">Ku Dalbo WhatsApp</a>
-        </div>
+<!-- NAV -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <!-- Alaabta 2-aad -->
-        <div class="product-card">
-            <div class="product-image">💻</div>
-            <div class="product-title">MacBook Air M2</div>
-            <div class="product-price">$1,199</div>
-            <a href="https://wa.me" target="_blank" class="order-btn">Ku Dalbo WhatsApp</a>
-        </div>
+<!-- ABOUT -->
+<section id="about">
+<div class="card">
+    <h2>About Me</h2>
+    <p>
+        Waxaan ahay web developer jecel design casri ah iyo frontend development.
+        Waxaan dhisaa websites professional ah oo responsive ah.
+    </p>
+</div>
+</section>
 
-    </main>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>My Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<div style="padding:10px;">
+<h3>Business Website</h3>
+<p>Modern landing page design.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d">
+<div style="padding:10px;">
+<h3>Portfolio Design</h3>
+<p>Creative personal portfolio UI.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+<div style="padding:10px;">
+<h3>Dashboard UI</h3>
+<p>Admin dashboard modern design.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="card">
+<h2>Contact Me</h2>
+<p>📞 +252 634849872</p>
+<p>📧 your@email.com</p>
+<a class="btn" href="tel:+252634849872">Call Now</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Hana Khadar | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
+           
